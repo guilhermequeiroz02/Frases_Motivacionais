@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="15dp"
+    tools:context=".ui.LetsStartActivity">
+
+    <TextView
+        android:id="@+id/textLetsStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/vamos_comecar"
+        android:textColor="@color/Orange"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/EtName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textLetsStart"
+        android:layout_marginTop="230dp"
+        android:autofillHints="name"
+        android:background="@color/black"
+        android:hint="@string/digite_seu_nome"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/EtName"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/EtName"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/salvar"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
